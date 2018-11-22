@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
-  # get 'static_pages/home'
-  root controller: :static_pages, action: :home
+	# server must have a cable endpoint in the router by which all data can be communicated
+	mount ActionCable.server => '/cable'
+
+
+  # get 'rooms/show'
+  root controller: :rooms, action: :show
+
+
+  get 'static_pages/home'
+  # root controller: :static_pages, action: :home
   get 'static_pages/help'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
