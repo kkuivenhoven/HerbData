@@ -1,31 +1,68 @@
 <p id="notice"><%= notice %></p>
 
+<center>
 <h1>Color Schemes</h1>
 
 <table>
   <thead>
     <tr>
+			<td>Name</td>
+			<td>Color #1</td>
+			<td>Color #2</td>
+			<td>Color #3</td>
       <th colspan="3"></th>
     </tr>
+		<!--tr>
+			<td>
+				&nbsp;
+			</td>
+		</tr-->
   </thead>
 
   <tbody>
-		<!--% if !@color_schemes.nil? %>
-			% @color_schemes.each do |color_scheme| %>
+		<% if !@color_schemes.nil? %>
+			<% @color_schemes.each do |color_scheme| %>
 				<tr>
-					<td>%= color_scheme.name %></td>
-					<td>%= color_scheme.colorOne %></td>
-					<td>%= color_scheme.colorTwo %></td>
-					<td>%= color_scheme.colorThree %></td>
-					<td>%= link_to 'Show', color_scheme %></td>
-					<td>%= link_to 'Edit', edit_color_scheme_path(color_scheme) %></td>
-					<td>%= link_to 'Destroy', color_scheme, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+					<td>
+						<%= color_scheme.name %>
+					</td>
+
+					<td>
+						<svg width="50" height="50">
+							<rect x="0" y="0" width="50" height="50" fill="#ffff00"/>
+						</svg>
+						<br><%= color_scheme.colorOne %>
+					</td>
+
+					<td>
+						<svg width="50" height="50">
+							<rect x="0" y="0" width="50" height="50" fill="#CCCC00"/>
+						</svg>
+						<br><%= color_scheme.colorTwo %>
+					</td>
+
+					<td>
+						<svg width="50" height="50">
+							<rect x="0" y="0" width="50" height="50" fill="#FFFF33"/>
+						</svg>
+						<br><%= color_scheme.colorThree %>
+					</td>
+
+					<td><%= link_to 'Show', color_scheme %><br>
+					<%= link_to 'Edit', edit_color_scheme_path(color_scheme) %></br>
+					<%= link_to 'Destroy', color_scheme, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 				</tr>
-			% end %>
-    % end %-->
+				<tr>
+					<td>
+						&nbsp;
+					</td>
+				</tr>
+			<% end %>
+    <% end %>
   </tbody>
 </table>
 
 <br>
 
 <%= link_to 'New Color Scheme', new_color_scheme_path %>
+</center>

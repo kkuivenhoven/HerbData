@@ -7,9 +7,10 @@ Rails.application.routes.draw do
 	end
   get 'rooms/show'
   # root controller: :rooms, action: :show
+	root controller: :color_schemes, action: :index
 
 
-  # get 'static_pages/home'
-  root controller: :static_pages, action: :home
+  get 'static_pages/home'
+  # root controller: :static_pages, action: :home
   get 'static_pages/help'
 end
