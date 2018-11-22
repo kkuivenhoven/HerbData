@@ -5,7 +5,7 @@ ruby '2.5.0'
 
 gem 'bootstrap'
 gem 'jquery-rails'
-gem 'redis', '~> 4.0'
+# gem 'redis', '~> 4.0'
 gem 'd3-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
