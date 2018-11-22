@@ -8,26 +8,53 @@
 	<br>
 
 
-	<%= @color_scheme.colorOne %><br>
+<table>
+	<thead>
+		<tr>
+			<td><%= @color_scheme.colorOne %></td>
+			<td><%= @color_scheme.colorTwo %></td>
+			<td><%= @color_scheme.colorThree %></td>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr>
+			<td>
+				<svg width="100" height="100">
+					<rect x="0" y="0" width="100" height="100" fill="<%= @color_scheme.colorOne %>"/>
+				</svg>
+			</td>
+			<td>
+				<svg width="100" height="100">
+					<rect x="0" y="0" width="100" height="100" fill="<%= @color_scheme.colorTwo %>"/>
+				</svg>
+			</td>
+			<td>
+				<svg width="100" height="100">
+					<rect x="0" y="0" width="100" height="100" fill="<%= @color_scheme.colorThree %>"/>
+				</svg>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+	<!--%= @color_scheme.colorOne %><br>
 	<svg width="100" height="100">
-		<rect x="0" y="0" width="100" height="100" fill="<%= @color_scheme.colorOne %>"/>
+		<rect x="0" y="0" width="100" height="100" fill="<= @color_scheme.colorOne %>"/>
 	</svg>
 	<br><br>
 
 
-	<%= @color_scheme.colorTwo %><br>
+	<= @color_scheme.colorTwo %><br>
 	<svg width="100" height="100">
-		<rect x="0" y="0" width="100" height="100" fill="<%= @color_scheme.colorTwo %>"/>
+		<rect x="0" y="0" width="100" height="100" fill="<= @color_scheme.colorTwo %>"/>
 	</svg>
 	<br><br>
 
-	<%= @color_scheme.colorThree %><br>
+	<= @color_scheme.colorThree %><br>
 	<svg width="100" height="100">
-		<rect x="0" y="0" width="100" height="100" fill="<%= @color_scheme.colorThree %>"/>
+		<rect x="0" y="0" width="100" height="100" fill="<= @color_scheme.colorThree %>"/>
 	</svg>
-	<br><br>
-
-
-
+	<br><br-->
 
 </center>
