@@ -24,11 +24,7 @@
 	<br><br>
 
 
-<% if Rails.env.development? %>
-	<%= link_to 'Edit', edit_color_scheme_path(@color_scheme) %> |
-<% end %>
-
-
+<%= link_to 'Edit', edit_color_scheme_path(@color_scheme) %> |
 <%= link_to 'Back', color_schemes_path %>
 
 
