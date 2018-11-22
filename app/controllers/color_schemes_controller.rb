@@ -4,7 +4,7 @@ class ColorSchemesController < ApplicationController
   # GET /color_schemes
   # GET /color_schemes.json
   def index
-    @color_schemes = ColorScheme.all
+    @color_schemes = ColorScheme.all.order('name ASC')
   end
 
   # GET /color_schemes/1
