@@ -3,11 +3,13 @@ Rails.application.routes.draw do
 	mount ActionCable.server => '/cable'
 
 
-  # get 'rooms/show'
-  root controller: :rooms, action: :show
+	resources :color_schemes do
+	end
+  get 'rooms/show'
+  # root controller: :rooms, action: :show
 
 
-  get 'static_pages/home'
-  # root controller: :static_pages, action: :home
+  # get 'static_pages/home'
+  root controller: :static_pages, action: :home
   get 'static_pages/help'
 end

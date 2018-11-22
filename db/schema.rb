@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_22_140429) do
+ActiveRecord::Schema.define(version: 2018_11_22_173801) do
+
+  create_table "color_schemes", force: :cascade do |t|
+    t.string "name"
+    t.string "colorOne"
+    t.string "colorTwo"
+    t.string "colorThree"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "messages", force: :cascade do |t|
     t.text "content"

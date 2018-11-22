@@ -1,0 +1,18 @@
+<h1>Editing Color Scheme</h1>
+
+<%= form_for(@color_scheme) do |f| %>
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+
+	<%= f.label :colorOne %>
+  <%= f.text_field :colorOne %><br>
+
+	<%= f.label :colorTwo %>
+  <%= f.text_field :colorTwo %><br>
+
+	<%= f.label :colorThree %>
+  <%= f.text_field :colorThree %><br>
+
+	<%= f.submit "Save" %>
+<% end %>
+<%= link_to 'Back', color_schemes_path %>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>HerbData</title>
+    <title>KevinsColorSchemes</title>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
 
@@ -9,10 +9,15 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+	<nav class="navbar navbar-default navbar-expand-sm">
+		&nbsp;&nbsp;<%= link_to 'Home', root_path, method: :get %>
+		&nbsp;&nbsp;<%= link_to 'Color Schemes', color_schemes_path, method: :get %>
+	</nav>
+
 	<div class="center jumbotron jumbotron-fluid" id="mainTran">
 		<div class="container">
 			<center>
-				<h1>Kendra Kuivenhoven</h1>
+				<h1>Kevins' Color Schemes</h1>
 				<p-small>
 					Lorem ipsum dolor sit amet, mandamus adipiscing eu cum. Nobis voluptaria at per. Quem nobis fabellas ex eos, ne mel illud explicari aliquando. Vim id etiam graece aliquam. Ut porro ullum aeque vis, nam congue indoctum partiendo ad.
 				</p-small>

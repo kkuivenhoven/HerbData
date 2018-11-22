@@ -1,0 +1,20 @@
+<%= form_with(model: color_scheme, local: true) do |form| %>
+  <% if color_scheme.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(color_scheme.errors.count, "error") %> prohibited this color_scheme from being saved:</h2>
+
+			<%= form.text_field :colorOne %>
+			<%= form.text_field :colorTwo %>
+			<%= form.text_field :colorThree %>
+      <ul>
+      <% color_scheme.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
