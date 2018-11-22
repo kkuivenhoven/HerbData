@@ -10,16 +10,18 @@
   </thead>
 
   <tbody>
-    <% @color_schemes.each do |color_scheme| %>
-      <tr>
-        <td><%= color_scheme.name %></td>
-				<td><%= color_scheme.colorOne %></td>
-				<td><%= color_scheme.colorTwo %></td>
-				<td><%= color_scheme.colorThree %></td>
-        <td><%= link_to 'Show', color_scheme %></td>
-        <td><%= link_to 'Edit', edit_color_scheme_path(color_scheme) %></td>
-        <td><%= link_to 'Destroy', color_scheme, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+		<% if !@color_schemes.nil? %>
+			<% @color_schemes.each do |color_scheme| %>
+				<tr>
+					<td><%= color_scheme.name %></td>
+					<td><%= color_scheme.colorOne %></td>
+					<td><%= color_scheme.colorTwo %></td>
+					<td><%= color_scheme.colorThree %></td>
+					<td><%= link_to 'Show', color_scheme %></td>
+					<td><%= link_to 'Edit', edit_color_scheme_path(color_scheme) %></td>
+					<td><%= link_to 'Destroy', color_scheme, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+				</tr>
+			<% end %>
     <% end %>
   </tbody>
 </table>
