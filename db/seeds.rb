@@ -9,7 +9,9 @@
 ColorScheme.create([
 		{ name: 'Fuego', colorOne: '#FC6600', colorTwo: '#FFBF00', colorThree: '#EF820D'},
 		{ name: 'Orange', colorOne: '#FFFBB9', colorTwo: '#ffb921', colorThree: '#cc5500'},
-		{ name: 'Olive', colorOne: '#5E7F58', colorTwo: '#B64913', colorThree: '#FCe7C8'}
+		{ name: 'Olive', colorOne: '#5E7F58', colorTwo: '#B64913', colorThree: '#FCe7C8'},
+		{ name: 'Violet', colorOne: '#4C384A', colorTwo: '#726A95', colorThree: '#351F39'},
+		{ name: 'Calm', colorOne: '#BBCBD2', colorTwo: '#495F77', colorThree: '#709Fb0'}
 	]
 )
 
