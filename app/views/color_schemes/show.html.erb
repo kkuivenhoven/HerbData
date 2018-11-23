@@ -11,27 +11,30 @@
 <table>
 	<thead>
 		<tr>
-			<td><%= @color_scheme.colorOne.upcase %></td>
-			<td><%= @color_scheme.colorTwo.upcase %></td>
-			<td><%= @color_scheme.colorThree.upcase %></td>
+			<td><center><%= @color_scheme.colorOne.upcase %></center></td>
+			<td><center><%= @color_scheme.colorTwo.upcase %></center></td>
+			<td><center><%= @color_scheme.colorThree.upcase %></center></td>
 		</tr>
 	</thead>
 
 	<tbody>
 		<tr>
 			<td>
-				<svg width="100" height="100">
-					<rect x="0" y="0" width="100" height="100" fill="<%= @color_scheme.colorOne %>"/>
+				<svg width="200" height="200">
+					<!--rect x="0" y="0" width="100" height="100" fill="%= @color_scheme.colorOne %>"/-->
+					<circle cx="100" cy="100" r="100" fill="<%= @color_scheme.colorOne %>"/>
+				</svg>
+			</td>
+			<td style="padding: 10px;">
+				<svg width="200" height="200">
+					<!--rect x="0" y="0" width="100" height="100" fill="%= @color_scheme.colorTwo %>"/-->
+					<circle cx="100" cy="100" r="100" fill="<%= @color_scheme.colorTwo %>"/>
 				</svg>
 			</td>
 			<td>
-				<svg width="100" height="100">
-					<rect x="0" y="0" width="100" height="100" fill="<%= @color_scheme.colorTwo %>"/>
-				</svg>
-			</td>
-			<td>
-				<svg width="100" height="100">
-					<rect x="0" y="0" width="100" height="100" fill="<%= @color_scheme.colorThree %>"/>
+				<svg width="200" height="200">
+					<!--rect x="0" y="0" width="100" height="100" fill="%= @color_scheme.colorThree %>"/-->
+					<circle cx="100" cy="100" r="100" fill="<%= @color_scheme.colorThree %>"/>
 				</svg>
 			</td>
 		</tr>
