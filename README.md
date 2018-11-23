@@ -10,16 +10,17 @@ Or you may visit the web app [here](https://manycolorschemes.herokuapp.com).
 
 ### Prerequisites
 <dl>
-	<dd>Rails 5.2.1</dd>
-	<dd>Ruby 2.5.0</dd>
+	<dd>• Rails 5.2.1</dd>
+	<dd>• Ruby 2.5.0</dd>
 </dl>
 
 ### Deployment
 Deployed using Heroku. 
 
 ### Built With
-• Framework: Ruby on Rails
-• Database: Postgres
-• Charts: D3.js
-• Styling: Bootstrap
-
+<dl>
+	<dd>• Framework: Ruby on Rails</dd>
+	<dd>• Database: Postgres</dd>
+	<dd>• Charts: D3.js</dd>
+	<dd>• Styling: Bootstrap</dd>
+</dl>
