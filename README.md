@@ -9,8 +9,10 @@ A web app designed to help out the aspiring artist with a variety of 3-color col
 Or you may visit the web app [here](https://manycolorschemes.herokuapp.com).
 
 ### Prerequisites
-• Rails 5.2.1
-• Ruby 2.5.0
+<dl>
+	<dd>Rails 5.2.1</dd>
+	<dd>Ruby 2.5.0</dd>
+</dl>
 
 ### Deployment
 Deployed using Heroku. 
