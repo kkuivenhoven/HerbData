@@ -14,7 +14,9 @@ ColorScheme.create([
 		{ name: 'Calm', colorOne: '#BBCBD2', colorTwo: '#495F77', colorThree: '#709Fb0'},
 		{ name: 'Relax', colorOne: '#daecf3', colorTwo: '#1aa687', colorThree: '#022d41'},
 		{ name: 'Sunset', colorOne: '#6c5b7b', colorTwo: '#cd6c84', colorThree: '#f67280'},
-		{ name: 'Creative', colorOne: '#4Abdac', colorTwo: '#fc4a1a', colorThree: '#f78733'}
+		{ name: 'Creative', colorOne: '#4Abdac', colorTwo: '#fc4a1a', colorThree: '#f78733'},
+		{ name: 'Rustic Wine', colorOne: '#59253A', colorTwo: '#78244C', colorThree: '#895061'}
+		{ name: 'Avocado Green', colorOne: '#73A761', colorTwo: '#CCE586', colorThree: '#AEE48C'}
 	]
 )
 
