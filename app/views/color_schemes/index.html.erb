@@ -2,15 +2,18 @@
 
 <center>
 <h1>Color Schemes</h1>
-<%= link_to 'New Color Scheme', new_color_scheme_path %>
+<%= link_to 'New Color Scheme', new_color_scheme_path, :class => "btn btn-light" %>
+<div class="row">
+<br>&nbsp;
+</div>
 
 <table>
   <thead>
     <tr>
-			<td>Name</td>
-			<td>Color #1</td>
-			<td>Color #2</td>
-			<td>Color #3</td>
+			<td><h4>&nbsp;Name&nbsp;</h4></td>
+			<td><h4>&nbsp;Color #1&nbsp;</h4></td>
+			<td><h4>&nbsp;Color #2&nbsp;</h4></td>
+			<td><h4>&nbsp;Color #3&nbsp;</h4></td>
       <th colspan="3"></th>
     </tr>
 		<!--tr>
@@ -25,7 +28,7 @@
 			<% @color_schemes.each do |color_scheme| %>
 				<tr>
 					<td>
-						<%= color_scheme.name %>
+					  <%= link_to color_scheme.name, color_scheme, :class => "btn btn-light" %>
 					</td>
 
 					<td>
@@ -49,9 +52,9 @@
 						<br><%= color_scheme.colorThree.upcase %>
 					</td>
 
-					<td><%= link_to 'Show', color_scheme %><br>
-					<%= link_to 'Edit', edit_color_scheme_path(color_scheme) %></br>
-					<%= link_to 'Destroy', color_scheme, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+					<td><%= link_to 'Show', color_scheme, :class => "btn btn-light" %><br>
+					<%= link_to 'Edit', edit_color_scheme_path(color_scheme), :class => "btn btn-light" %></br>
+					<%= link_to 'Destroy', color_scheme, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-light" %></td>
 				</tr>
 				<tr>
 					<td>
