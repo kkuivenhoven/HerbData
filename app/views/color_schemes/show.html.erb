@@ -11,9 +11,24 @@
 <table>
 	<thead>
 		<tr>
-			<td><center><%= @color_scheme.colorOne.upcase %></center></td>
-			<td><center><%= @color_scheme.colorTwo.upcase %></center></td>
-			<td><center><%= @color_scheme.colorThree.upcase %></center></td>
+			 <td>
+				<center>
+						<%= @color_scheme.colorOne.upcase %><br>
+						<%= @color_scheme.rgb_one %>
+					</center>
+				</td>
+				<td>
+					<center>
+						<%= @color_scheme.colorTwo.upcase %><br>
+						<%= @color_scheme.rgb_two %>
+					</center>
+				</td>
+			  <td>
+					<center>
+						<%= @color_scheme.colorThree.upcase %>
+						<%= @color_scheme.rgb_three %>
+					</center>
+				</td>
 		</tr>
 	</thead>
 
