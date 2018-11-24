@@ -4,33 +4,33 @@
 <h1>Color Schemes</h1>
 <!--%= link_to 'New Color Scheme', new_color_scheme_path, :class => "btn btn-light" %-->
 <div class="row">
-<br>&nbsp;
 </div>
 
 <table>
-  <thead>
+  <!--thead>
     <tr>
-			<td><h4>&nbsp;Name&nbsp;</h4></td>
+			<h4><center>&nbsp;Name&nbsp;</center></h4>
+    </tr>
+    <tr>
 			<td><h4>&nbsp;Color #1&nbsp;</h4></td>
 			<td><h4>&nbsp;Color #2&nbsp;</h4></td>
 			<td><h4>&nbsp;Color #3&nbsp;</h4></td>
       <th colspan="2"></th>
     </tr>
-		<!--tr>
-			<td>
-				&nbsp;
-			</td>
-		</tr-->
-  </thead>
+  </thead-->
 
   <tbody>
 		<% if !@color_schemes.nil? %>
 			<% @color_schemes.each do |color_scheme| %>
 				<tr>
+					<td></td>
 					<td>
-					  <%= link_to color_scheme.name, color_scheme, :class => "btn btn-light" %>
+					  <center><%= link_to color_scheme.name, color_scheme, :class => "btn btn-light" %></center><br>
 					</td>
+					<td></td>
+				</tr>
 
+				<tr>
 					<td>
 						<center>
 							<svg width="75" height="75">

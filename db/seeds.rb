@@ -7,16 +7,26 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 ColorScheme.create([
-		{ name: 'Fuego', colorOne: '#FC6600', colorTwo: '#FFBF00', colorThree: '#EF820D'},
-		{ name: 'Orange', colorOne: '#FFFBB9', colorTwo: '#ffb921', colorThree: '#cc5500'},
-		{ name: 'Olive', colorOne: '#5E7F58', colorTwo: '#B64913', colorThree: '#FCe7C8'},
-		{ name: 'Violet', colorOne: '#4C384A', colorTwo: '#726A95', colorThree: '#351F39'},
-		{ name: 'Calm', colorOne: '#BBCBD2', colorTwo: '#495F77', colorThree: '#709Fb0'},
-		{ name: 'Relax', colorOne: '#daecf3', colorTwo: '#1aa687', colorThree: '#022d41'},
-		{ name: 'Sunset', colorOne: '#6c5b7b', colorTwo: '#cd6c84', colorThree: '#f67280'},
-		{ name: 'Creative', colorOne: '#4Abdac', colorTwo: '#fc4a1a', colorThree: '#f78733'},
-		{ name: 'Rustic Wine', colorOne: '#59253A', colorTwo: '#78244C', colorThree: '#895061'}
-		{ name: 'Avocado Green', colorOne: '#73A761', colorTwo: '#CCE586', colorThree: '#AEE48C'}
+		{ name: 'Fuego', colorOne: '#FC6600', colorTwo: '#FFBF00', colorThree: '#EF820D',
+			rgb_one: 'rgb(252,102,0)', rgb_two: 'rgb(255,191,0)', rgb_three: 'rgb(239,130,13)'},
+		{ name: 'Orange', colorOne: '#FFFBB9', colorTwo: '#ffb921', colorThree: '#cc5500',
+			rgb_one: 'rgb(255,251,185)', rgb_two: 'rgb(255,185,33)', rgb_three: 'rgb(204,85,0)'},
+		{ name: 'Olive', colorOne: '#5E7F58', colorTwo: '#B64913', colorThree: '#FCe7C8',
+			rgb_one: 'rgb(94,127,88)', rgb_two: 'rgb(182,73,19)', rgb_three: 'rgb(252,231,200)'},
+		{ name: 'Violet', colorOne: '#4C384A', colorTwo: '#726A95', colorThree: '#351F39',
+			rgb_one: 'rgb(76,56,74)', rgb_two: 'rgb(114,106,149)', rgb_three: 'rgb(53,31,57)'},
+		{ name: 'Calm', colorOne: '#BBCBD2', colorTwo: '#495F77', colorThree: '#709Fb0',
+			rgb_one: 'rgb(187, 203, 210)', rgb_two: 'rgb(73, 95, 119)', rgb_three: 'rgb(112, 159, 176)'},
+		{ name: 'Relax', colorOne: '#daecf3', colorTwo: '#1aa687', colorThree: '#022d41',
+			rgb_one: 'rgb(218,236,243)', rgb_two: 'rgb(26,166,135)', rgb_three: 'rgb(2,45,65)'},
+		{ name: 'Sunset', colorOne: '#6c5b7b', colorTwo: '#cd6c84', colorThree: '#f67280',
+			rgb_one: 'rgb(108,91,123)', rgb_two: 'rgb(205,108,132)', rgb_three: 'rgb(246,114,128)'},
+		{ name: 'Creative', colorOne: '#4Abdac', colorTwo: '#fc4a1a', colorThree: '#f78733',
+			rgb_one: 'rgb(74,189,172)', rgb_two: 'rgb(252,74,26)', rgb_three: 'rgb(247,135,51)'},
+		{ name: 'Rustic Wine', colorOne: '#59253A', colorTwo: '#78244C', colorThree: '#895061',
+			rgb_one: 'rgb(89,37,58)', rgb_two: 'rgb(120,36,76)', rgb_three: 'rgb(137,80,97)'},
+		{ name: 'Avocado Green', colorOne: '#73A761', colorTwo: '#CCE586', colorThree: '#AEE48C',
+			rgb_one: 'rgb(115,167,97)', rgb_two: 'rgb(204,229,134)', rgb_three: 'rgb(174,228,140)'},
 	]
 )
 
