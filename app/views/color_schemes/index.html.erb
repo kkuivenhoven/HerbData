@@ -37,7 +37,7 @@
 							<circle cx="37.5" cy="37.5" r="37.5" fill="<%= color_scheme.colorOne %>"/>
 						</svg>
 						<br><%= color_scheme.colorOne.upcase %>
-						<br><%= color_scheme.rgb_one %>
+						<!--br><span style="font-size: 13px;">%= color_scheme.rgb_one %></span-->
 					</td>
 
 					<td>
@@ -46,7 +46,7 @@
 							<circle cx="37.5" cy="37.5" r="37.5" fill="<%= color_scheme.colorTwo %>"/>
 						</svg>
 						<br><%= color_scheme.colorTwo.upcase %>
-						<br><%= color_scheme.rgb_two %>
+						<!--br><span style="font-size: 13px;">%= color_scheme.rgb_two %></span-->
 					</td>
 
 					<td>
@@ -55,12 +55,12 @@
 							<circle cx="37.5" cy="37.5" r="37.5" fill="<%= color_scheme.colorThree %>"/>
 						</svg>
 						<br><%= color_scheme.colorThree.upcase %>
-						<br><%= color_scheme.rgb_three %>
+						<!--br><span style="font-size: 13px;">%= color_scheme.rgb_three %></span-->
 					</td>
 
 					<td><%= link_to 'Show', color_scheme, :class => "btn btn-light" %><br>
-					<%= link_to 'Edit', edit_color_scheme_path(color_scheme), :class => "btn btn-light" %></br>
-					<%= link_to 'Destroy', color_scheme, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-light" %></td>
+					<!--%= link_to 'Edit', edit_color_scheme_path(color_scheme), :class => "btn btn-light" %></br>
+					<= link_to 'Destroy', color_scheme, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-light" %></td-->
 				</tr>
 				<tr>
 					<td>
