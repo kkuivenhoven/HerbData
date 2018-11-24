@@ -60,6 +60,6 @@ class ColorSchemesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def color_scheme_params
-      params.require(:color_scheme).permit(:name, :colorOne, :colorTwo, :colorThree)
+      params.require(:color_scheme).permit(:name, :colorOne, :colorTwo, :colorThree, :rgb_one, :rgb_two, :rgb_three)
     end
 end
