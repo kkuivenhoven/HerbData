@@ -52,7 +52,7 @@ FiveColor.create([
 		{ name: 'Vivid', colorOne: '#FC4A1A', colorTwo: '#CC0950', colorThree: '#78244C', color_four: '#F67280', color_five: '#ef820d',
 			rgb_one: 'rgb(252,74,26)', rgb_two: 'rgb(204, 9, 80)', rgb_three: 'rgb(120,36,76)', rgb_four: 'rgb(246,114,128)', rgb_five:'239,130,13'},
 		{ name: 'Sailing', colorOne: '#FFF9C8', colorTwo: '#FCE7C8', colorThree: '#008DE0', color_four: '#0865D3', color_five: '#4abdac',
-			rgb_one: 'rgb(255, 249, 200)', rgb_two: 'rgb(252,231,200)', rgb_three: 'rgb(0, 141, 224)', rgb_four: 'rgb(8, 101, 211)', rgb_five:'rgb(74,189,172) '},
+			rgb_one: 'rgb(255, 249, 200)', rgb_two: 'rgb(252,231,200)', rgb_three: 'rgb(0, 141, 224)', rgb_four: 'rgb(8, 101, 211)', rgb_five:'rgb(74,189,172)'},
 	]
 )
 
