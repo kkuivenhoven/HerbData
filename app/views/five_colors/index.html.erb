@@ -12,7 +12,7 @@
 				<td></td>
 				<td>
 					<center><%= link_to five_color.name, five_color, :class => "btn btn-light" %></center><br>
-					<!--%= link_to 'Destroy', five_color, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-light" %-->
+					<%= link_to 'Destroy', five_color, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-light" %>
 				</td>
 				<td>
 					<!--%= link_to 'Show', five_color, :class => "btn btn-light" %-->
@@ -22,40 +22,50 @@
 				</td>
       </tr>
       <tr>
-        <td>	
-              <svg width="75" height="75">
-                <circle cx="37.5" cy="37.5" r="37.5" fill="<%= five_color.colorOne %>"/>
-              </svg>
-          <br><span style="font-size:13px"><%= five_color.rgb_one %></span><br>
-					<%= five_color.colorOne.upcase %>
+        <td style="padding: 5px;">	
+					<center>
+            <svg width="75" height="75">
+              <circle cx="37.5" cy="37.5" r="37.5" fill="<%= five_color.colorOne %>"/>
+            </svg>
+						<br><span style="font-size:13px"><%= five_color.rgb_one %></span><br>
+						<%= five_color.colorOne.upcase %>
+					</center>
 				</td>
-        <td>
-              <svg width="75" height="75">
-                <circle cx="37.5" cy="37.5" r="37.5" fill="<%= five_color.colorTwo %>"/>
-              </svg>
-					<br><span style="font-size: 13px;"><%= five_color.rgb_two %></span><br>
-					<%= five_color.colorTwo.upcase %>
+        <td style="padding: 5px;">
+					<center>
+            <svg width="75" height="75">
+              <circle cx="37.5" cy="37.5" r="37.5" fill="<%= five_color.colorTwo %>"/>
+            </svg>
+						<br><span style="font-size: 13px;"><%= five_color.rgb_two %></span><br>
+						<%= five_color.colorTwo.upcase %>
+					</center>
 				</td>
-        <td>
-              <svg width="75" height="75">
-                <circle cx="37.5" cy="37.5" r="37.5" fill="<%= five_color.colorThree %>"/>
-              </svg>
-					<br><span style="font-size: 13px;"><%= five_color.rgb_three %></span><br>
-					<%= five_color.colorThree.upcase %>
+        <td style="padding: 5px;">
+					<center>
+            <svg width="75" height="75">
+              <circle cx="37.5" cy="37.5" r="37.5" fill="<%= five_color.colorThree %>"/>
+            </svg>
+						<br><span style="font-size: 13px;"><%= five_color.rgb_three %></span><br>
+						<%= five_color.colorThree.upcase %>
+					</center>
 				</td>
-        <td>
-              <svg width="75" height="75">
-                <circle cx="37.5" cy="37.5" r="37.5" fill="<%= five_color.color_four %>"/>
-              </svg>
-					<br><span style="font-size: 13px;"><%= five_color.rgb_four %></span><br>
-					<%= five_color.color_four.upcase %>
+        <td style="padding: 5px;">
+					<center>
+            <svg width="75" height="75">
+              <circle cx="37.5" cy="37.5" r="37.5" fill="<%= five_color.color_four %>"/>
+            </svg>
+						<br><span style="font-size: 13px;"><%= five_color.rgb_four %></span><br>
+						<%= five_color.color_four.upcase %>
+					</center>
 				</td>
-        <td>
-              <svg width="75" height="75">
-                <circle cx="37.5" cy="37.5" r="37.5" fill="<%= five_color.color_five %>"/>
-              </svg>
-					<br><span style="font-size: 13px;"><%= five_color.rgb_five %></span><br>
-					<%= five_color.color_five.upcase %>
+        <td style="padding: 5px;">
+					<center>
+            <svg width="75" height="75">
+              <circle cx="37.5" cy="37.5" r="37.5" fill="<%= five_color.color_five %>"/>
+            </svg>
+						<br><span style="font-size: 13px;"><%= five_color.rgb_five %></span><br>
+						<%= five_color.color_five.upcase %>
+					</center>
 				</td>
       </tr>
 			<tr>

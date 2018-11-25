@@ -52,7 +52,15 @@ FiveColor.create([
 		{ name: 'Vivid', colorOne: '#FC4A1A', colorTwo: '#CC0950', colorThree: '#78244C', color_four: '#F67280', color_five: '#ef820d',
 			rgb_one: 'rgb(252,74,26)', rgb_two: 'rgb(204, 9, 80)', rgb_three: 'rgb(120,36,76)', rgb_four: 'rgb(246,114,128)', rgb_five:'239,130,13'},
 		{ name: 'Sailing', colorOne: '#FFF9C8', colorTwo: '#FCE7C8', colorThree: '#008DE0', color_four: '#0865D3', color_five: '#4abdac',
-			rgb_one: 'rgb(255, 249, 200)', rgb_two: 'rgb(252,231,200)', rgb_three: 'rgb(0, 141, 224)', rgb_four: 'rgb(8, 101, 211)', rgb_five:'rgb(74,189,172)'},
+			rgb_one: 'rgb(255,249,200)', rgb_two: 'rgb(252,231,200)', rgb_three: 'rgb(0, 141, 224)', rgb_four: 'rgb(8, 101, 211)', rgb_five:'rgb(74,189,172)'},
+		{ name: 'Southwest', colorOne: '#2e1c14', colorTwo: '#e89a33', colorThree: '#c24108', color_four: '#844120', color_five: '#fad240',
+			rgb_one: 'rgb(46,28,20)', rgb_two: 'rgb(232,154,51)', rgb_three: 'rgb(194,65,8)', rgb_four: 'rgb(132,65,32)', rgb_five:'rgb(250,210,64)'},
+		{ name: 'Tuscan', colorOne: '#5c3c27', colorTwo: '#a07033', colorThree: '#75746f', color_four: '#67181e', color_five: '#ac905a',
+			rgb_one: 'rgb(92,60,39)', rgb_two: 'rgb(160,112,51)', rgb_three: 'rgb(117,116,111)', rgb_four: 'rgb(103,24,30)', rgb_five:'rgb(172,144,90)'},
+		{ name: 'Tainted', colorOne: '#ec8943', colorTwo: '#efbf3f', colorThree: '#66836b', color_four: '#9ba4c6', color_five: '#ab6da8',
+			rgb_one: 'rgb(236,137,67)', rgb_two: 'rgb(239,191,63)', rgb_three: 'rgb(102,131,107)', rgb_four: 'rgb(155,164,198)', rgb_five:'rgb(171,109,168)'},
+		{ name: 'Pomegranate', colorOne: '#a8422a', colorTwo: '#f74333', colorThree: '#cd8e76', color_four: '#f08a76', color_five: '#f66e53',
+			rgb_one: 'rgb(168,66,42)', rgb_two: 'rgb(247,67,51)', rgb_three: 'rgb(205,142,118)', rgb_four: 'rgb(240,138,118)', rgb_five:'rgb(246,110,83)'},
 	]
 )
 

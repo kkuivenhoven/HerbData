@@ -4,6 +4,7 @@
 <h2><%= @five_color.name %></h2>
 <!--%= link_to 'Edit', edit_five_color_path(@five_color), :class => "btn btn-light" %> |-->
 <%= link_to 'Back', five_colors_path, :class => "btn btn-light" %>
+<br><br>
 
 <table>   
   <thead>
@@ -43,29 +44,39 @@
   <tbody> 
     <tr>
       <td>
-        <svg width="200" height="200">
-          <circle cx="100" cy="100" r="100" fill="<%= @five_color.colorOne %>"/>
-        </svg>  
+				<center>
+					<svg width="200" height="200">
+						<circle cx="100" cy="100" r="100" fill="<%= @five_color.colorOne %>"/>
+					</svg>  
+				</center>
       </td>   
       <td style="padding: 10px;">
-        <svg width="200" height="200">
-          <circle cx="100" cy="100" r="100" fill="<%= @five_color.colorTwo %>"/>
-        </svg>
+				<center>
+					<svg width="200" height="200">
+						<circle cx="100" cy="100" r="100" fill="<%= @five_color.colorTwo %>"/>
+					</svg>
+				</center>
       </td>
       <td>
-        <svg width="200" height="200">
-          <circle cx="100" cy="100" r="100" fill="<%= @five_color.colorThree %>"/>
-        </svg>
+				<center>
+					<svg width="200" height="200">
+						<circle cx="100" cy="100" r="100" fill="<%= @five_color.colorThree %>"/>
+					</svg>
+				</center>
       </td>
       <td style="padding: 10px;">
-        <svg width="200" height="200">
-          <circle cx="100" cy="100" r="100" fill="<%= @five_color.color_four %>"/>
-        </svg>
+				<center>
+					<svg width="200" height="200">
+						<circle cx="100" cy="100" r="100" fill="<%= @five_color.color_four %>"/>
+					</svg>
+				</center>
       </td>
       <td>
-        <svg width="200" height="200">
-          <circle cx="100" cy="100" r="100" fill="<%= @five_color.color_five %>"/>
-        </svg>
+				<center>
+					<svg width="200" height="200">
+						<circle cx="100" cy="100" r="100" fill="<%= @five_color.color_five %>"/>
+					</svg>
+				</center>
       </td>
     </tr>
   </tbody>

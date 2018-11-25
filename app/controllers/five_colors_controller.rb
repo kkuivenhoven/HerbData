@@ -4,7 +4,7 @@ class FiveColorsController < ApplicationController
   # GET /five_colors
   # GET /five_colors.json
   def index
-    @five_colors = FiveColor.all
+    @five_colors = FiveColor.all.order('name ASC')
   end
 
   # GET /five_colors/1
