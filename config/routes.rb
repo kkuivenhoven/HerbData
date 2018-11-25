@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :five_colors
 	# server must have a cable endpoint in the router by which all data can be communicated
 	# mount ActionCable.server => '/cable'
 

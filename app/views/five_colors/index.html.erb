@@ -1,0 +1,68 @@
+<p id="notice"><%= notice %></p>
+
+<center>
+<h1>Five Colors</h1>
+<%= link_to 'New Five Color', new_five_color_path, :class => "btn btn-light" %>
+
+<table>
+  <tbody>
+    <% @five_colors.each do |five_color| %>
+      <tr>
+				<td></td>
+				<td></td>
+				<td>
+					<%= link_to five_color.name, five_color, :class => "btn btn-light" %>
+					<!--%= link_to 'Destroy', five_color, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-light" %-->
+				</td>
+				<td>
+					<!--%= link_to 'Show', five_color, :class => "btn btn-light" %-->
+				</td>
+				<td>	
+					<%= link_to 'Edit', edit_five_color_path(five_color), :class => "btn btn-light" %>
+				</td>
+      </tr>
+      <tr>
+        <td>	
+              <svg width="75" height="75">
+                <circle cx="37.5" cy="37.5" r="37.5" fill="<%= five_color.colorOne %>"/>
+              </svg>
+          <br><span style="font-size:13px"><%= five_color.rgb_one %></span><br>
+					<%= five_color.colorOne.upcase %>
+				</td>
+        <td>
+              <svg width="75" height="75">
+                <circle cx="37.5" cy="37.5" r="37.5" fill="<%= five_color.colorTwo %>"/>
+              </svg>
+					<br><span style="font-size: 13px;"><%= five_color.rgb_two %></span><br>
+					<%= five_color.colorTwo.upcase %>
+				</td>
+        <td>
+              <svg width="75" height="75">
+                <circle cx="37.5" cy="37.5" r="37.5" fill="<%= five_color.colorThree %>"/>
+              </svg>
+					<br><span style="font-size: 13px;"><%= five_color.rgb_three %></span><br>
+					<%= five_color.colorThree.upcase %>
+				</td>
+        <td>
+              <svg width="75" height="75">
+                <circle cx="37.5" cy="37.5" r="37.5" fill="<%= five_color.color_four %>"/>
+              </svg>
+					<br><span style="font-size: 13px;"><%= five_color.rgb_four %></span><br>
+					<%= five_color.color_four.upcase %>
+				</td>
+        <td>
+              <svg width="75" height="75">
+                <circle cx="37.5" cy="37.5" r="37.5" fill="<%= five_color.color_five %>"/>
+              </svg>
+					<br><span style="font-size: 13px;"><%= five_color.rgb_five %></span><br>
+					<%= five_color.color_five.upcase %>
+				</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
+</center>

@@ -1,0 +1,73 @@
+<p id="notice"><%= notice %></p>
+
+<center>
+<h2><%= @five_color.name %></h2>
+<%= link_to 'Edit', edit_five_color_path(@five_color), :class => "btn btn-light" %> |
+<%= link_to 'Back', five_colors_path, :class => "btn btn-light" %>
+
+<table>   
+  <thead>
+    <tr>
+       <td>
+        <center>
+            <%= @five_color.rgb_one %><br>
+            <%= @five_color.colorOne.upcase %>
+          </center>
+        </td>   
+        <td>  
+          <center>
+            <%= @five_color.rgb_two %><br>
+            <%= @five_color.colorTwo.upcase %>
+          </center>
+        </td>
+        <td>
+          <center>
+            <%= @five_color.rgb_three %><br>
+            <%= @five_color.colorThree.upcase %>
+          </center>
+        </td> 
+        <td>
+          <center>
+            <%= @five_color.rgb_four %><br>
+            <%= @five_color.color_four.upcase %>
+          </center>
+        </td> 
+        <td>
+          <center>
+            <%= @five_color.rgb_five %><br>
+            <%= @five_color.color_five.upcase %>
+          </center>
+        </td> 
+    </tr>     
+  </thead>    
+  <tbody> 
+    <tr>
+      <td>
+        <svg width="200" height="200">
+          <circle cx="100" cy="100" r="100" fill="<%= @five_color.colorOne %>"/>
+        </svg>  
+      </td>   
+      <td style="padding: 10px;">
+        <svg width="200" height="200">
+          <circle cx="100" cy="100" r="100" fill="<%= @five_color.colorTwo %>"/>
+        </svg>
+      </td>
+      <td>
+        <svg width="200" height="200">
+          <circle cx="100" cy="100" r="100" fill="<%= @five_color.colorThree %>"/>
+        </svg>
+      </td>
+      <td>
+        <svg width="200" height="200">
+          <circle cx="100" cy="100" r="100" fill="<%= @five_color.color_four %>"/>
+        </svg>
+      </td>
+      <td>
+        <svg width="200" height="200">
+          <circle cx="100" cy="100" r="100" fill="<%= @five_color.color_five %>"/>
+        </svg>
+      </td>
+    </tr>
+  </tbody>
+</table>
+            

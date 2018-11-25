@@ -21,9 +21,11 @@
 			<center>
 				<h1>Color Schemes</h1>
 				<p>
-					An assortment of 3-color color schemes with associated hexadecimal and RGB values.<br>
+					An assortment of 3-color and 5-color color schemes with associated hexadecimal and RGB values.<br>
 					<span>By: Kendra Kuivenhoven</span>
 				</p>
+					 <%= link_to '3-color', color_schemes_path, :class => "btn btn-secondary" %>
+					 <%= link_to '5-color', five_colors_path, :class => "btn btn-secondary" %>
 				<!--% if current_page?(controller: 'color_schemes', action: 'show') %>
 					 %= link_to 'Back', color_schemes_path, :class => "btn" %>
 				% end %-->

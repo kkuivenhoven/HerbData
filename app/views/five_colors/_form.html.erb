@@ -1,0 +1,47 @@
+<%= form_with(model: five_color, local: true) do |form| %>
+  <% if five_color.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(five_color.errors.count, "error") %> prohibited this five_color from being saved:</h2>
+
+      <ul>
+      <% five_color.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :colorOne %>
+    <%= form.text_field :colorOne %>
+  </div>
+
+  <div class="field">
+    <%= form.label :colorTwo %>
+    <%= form.text_field :colorTwo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :colorThree %>
+    <%= form.text_field :colorThree %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rgb_one %>
+    <%= form.text_field :rgb_one %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rgb_two %>
+    <%= form.text_field :rgb_two %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rgb_three %>
+    <%= form.text_field :rgb_three %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
