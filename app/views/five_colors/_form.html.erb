@@ -1,47 +1,79 @@
-<%= form_with(model: five_color, local: true) do |form| %>
-  <% if five_color.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(five_color.errors.count, "error") %> prohibited this five_color from being saved:</h2>
+<div class="row">
+	<div class="col-sm-4">
+	</div>
+	<div class="col-sm-4">
+	<center>
+		<%= form_with(model: five_color, local: true) do |form| %>
+			<% if five_color.errors.any? %>
+				<div id="error_explanation">
+					<h2><%= pluralize(five_color.errors.count, "error") %> prohibited this five_color from being saved:</h2>
 
-      <ul>
-      <% five_color.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+					<ul>
+					<% five_color.errors.full_messages.each do |message| %>
+						<li><%= message %></li>
+					<% end %>
+					</ul>
+				</div>
+			<% end %>
 
-  <div class="field">
-    <%= form.label :colorOne %>
-    <%= form.text_field :colorOne %>
-  </div>
+			<br>
+			<div class="form-group">
+				<%= form.label :name, "Name: " %>
+				<%= form.text_field :name, class: 'form-control' %>
+			</div>
 
-  <div class="field">
-    <%= form.label :colorTwo %>
-    <%= form.text_field :colorTwo %>
-  </div>
+			<div class="form-group">
+				<%= form.label :colorOne, "Color one: " %>
+				<%= form.text_field :colorOne, class: 'form-control' %>
+			</div>
+			<div class="form-group">
+				<%= form.label :rgb_one, "RGB One: " %>
+				<%= form.text_field :rgb_one, class: 'form-control' %>
+			</div>
 
-  <div class="field">
-    <%= form.label :colorThree %>
-    <%= form.text_field :colorThree %>
-  </div>
+			<div class="form-group">
+				<%= form.label :colorTwo, "Color two: " %>
+				<%= form.text_field :colorTwo, class: 'form-control' %>
+			</div>
+			<div class="form-group">
+				<%= form.label :rgb_two, "RGB Two: " %>
+				<%= form.text_field :rgb_two, class: 'form-control' %>
+			</div>
 
-  <div class="field">
-    <%= form.label :rgb_one %>
-    <%= form.text_field :rgb_one %>
-  </div>
+			<div class="form-group">
+				<%= form.label :colorThree, "Color three: " %>
+				<%= form.text_field :colorThree, class: 'form-control' %>
+			</div>
+			<div class="form-group">
+				<%= form.label :rgb_three, "RGB Three: " %>
+				<%= form.text_field :rgb_three, class: 'form-control' %>
+			</div>
 
-  <div class="field">
-    <%= form.label :rgb_two %>
-    <%= form.text_field :rgb_two %>
-  </div>
+			<div class="form-group">
+				<%= form.label :color_four, "Color four:" %>
+				<%= form.text_field :color_four, class: 'form-control' %>
+			</div>
+			<div class="form-group">
+				<%= form.label :rgb_four, "RGB Four: " %>
+				<%= form.text_field :rgb_four, class: 'form-control' %>
+			</div>
 
-  <div class="field">
-    <%= form.label :rgb_three %>
-    <%= form.text_field :rgb_three %>
-  </div>
+			<div class="form-group">
+				<%= form.label :color_five, "Color five: " %>
+				<%= form.text_field :color_five, class: 'form-control' %>
+			</div>
+			<div class="form-group">
+				<%= form.label :rgb_five, "RGB Five: " %>
+				<%= form.text_field :rgb_five, class: 'form-control' %>
+			</div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
+
+			<div class="actions">
+				<%= form.submit "Submit", class: "btn btn-light" %>
+			</div>
+		<% end %>
+	</center>
+	</div>
+	<div class="col-sm-4">
+	</div>
+</div>

@@ -16,6 +16,7 @@
 		&nbsp;&nbsp;%= link_to 'Color Schemes', color_schemes_path, method: :get %>
 	</nav-->
 
+
 	<div class="center jumbotron jumbotron-fluid" id="mainTran">
 		<div class="container">
 			<center>
@@ -33,6 +34,11 @@
 		</div>
 	</div>
 
+	<!--% flash.each do |message_type, message| %>
+		<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		<= content_tag(:div, message, class: "alert alert-#{message_type}") %>
+	% end %-->
+	
 
   <body>
     <%= yield %>

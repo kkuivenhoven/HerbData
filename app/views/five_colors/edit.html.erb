@@ -1,6 +1,9 @@
-<h1>Editing Five Color</h1>
+<center>
+	<h1>Editing Five Color</h1>
 
-<%= render 'form', five_color: @five_color %>
+	<%= link_to 'Show', @five_color, :class => "btn btn-light" %> |
+	<%= link_to 'Back', five_colors_path, :class => "btn btn-light" %>
 
-<%= link_to 'Show', @five_color %> |
-<%= link_to 'Back', five_colors_path %>
+	<%= render 'form', five_color: @five_color %>
+</center>
+

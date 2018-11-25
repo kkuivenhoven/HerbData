@@ -26,15 +26,22 @@ class FiveColorsController < ApplicationController
   def create
     @five_color = FiveColor.new(five_color_params)
 
-    respond_to do |format|
+    # respond_to do |format|
       if @five_color.save
+				flash[:success] = "Five color was successfully created."
+				redirect_to @five_color
+=begin
         format.html { redirect_to @five_color, notice: 'Five color was successfully created.' }
         format.json { render :show, status: :created, location: @five_color }
+=end
       else
+				render :new
+=begin
         format.html { render :new }
         format.json { render json: @five_color.errors, status: :unprocessable_entity }
+=end
       end
-    end
+    # end
   end
 
   # PATCH/PUT /five_colors/1
@@ -69,6 +76,6 @@ class FiveColorsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def five_color_params
-      params.require(:five_color).permit(:colorOne, :colorTwo, :colorThree, :rgb_one, :rgb_two, :rgb_three)
+      params.require(:five_color).permit(:colorOne, :colorTwo, :colorThree, :color_four, :color_five, :rgb_one, :rgb_two, :rgb_three, :rgb_four, :rgb_five)
     end
 end
