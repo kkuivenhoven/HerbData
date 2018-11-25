@@ -11,7 +11,7 @@
 				<td></td>
 				<td></td>
 				<td>
-					<%= link_to five_color.name, five_color, :class => "btn btn-light" %>
+					<center><%= link_to five_color.name, five_color, :class => "btn btn-light" %></center><br>
 					<!--%= link_to 'Destroy', five_color, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-light" %-->
 				</td>
 				<td>
@@ -58,6 +58,11 @@
 					<%= five_color.color_five.upcase %>
 				</td>
       </tr>
+			<tr>
+				<td>
+					&nbsp;
+				</td>
+			</tr>
     <% end %>
   </tbody>
 </table>
